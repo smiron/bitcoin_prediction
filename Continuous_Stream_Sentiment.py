@@ -17,7 +17,7 @@ def main():
     # set path of csv file to save sentiment stats
     path = 'live_tweet.csv'
     f = open(path,"a")
-    f1 = open('tweet_data','a')
+    f1 = open('tweet_data','a', encoding='utf-8')
     # access twitter api via tweepy methods
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)

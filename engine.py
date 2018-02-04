@@ -31,6 +31,7 @@ data = pd.read_csv("merged_data.csv")
 datag = data[['Price','Sentiment']].groupby(data['Time']).mean()
 
 from sklearn.preprocessing import MinMaxScaler
+
 values = datag['Price'].values.reshape(-1,1)
 sentiment = datag['Sentiment'].values.reshape(-1,1)
 values = values.astype('float32')
