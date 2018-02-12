@@ -9,7 +9,7 @@ def getPrices():
         r = requests.get(page_link)
         r = r.text
 
-        with open("bitcoin_historic_data.csv", mode='a', encoding='utf-8', newline='') as file:
+        with open("bitcoin_historic_data_20180212.csv", mode='a', encoding='utf-8', newline='') as file:
             file.write(r)
             file.write('\n')
 
